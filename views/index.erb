@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<script src="clipboard.min.js"></script>
+<script type="text/javascript">
+new Clipboard('.user');
+new Clipboard('.pass');
+new Clipboard('.clear');
+</script>
+
+<button class="user" data-clipboard-action="copy" data-clipboard-text="<%= settings.user %>">
+    Copy User to clipboard
+</button>
+
+<button class="pass" data-clipboard-action="copy" data-clipboard-text="<%= settings.password %>">
+    Copy Password to clipboard
+</button>
+
+<button class="pass" data-clipboard-action="copy" data-clipboard-text="💩">
+    Clear clipboard
+</button>
+
+</body>
+</html>
+
